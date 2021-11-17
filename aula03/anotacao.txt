@@ -1,0 +1,23 @@
+npm init -Y -> inicia o projeto
+
+npm i "nome do pacote"  instala o pacote
+
+npm i "nome do pacote" -E instala o pacote porem o mesmo nunca será atualizado
+
+npm i "nome do pacote" --save-dev  instala o pacote como dependencia de desenvolvimento
+
+npm i "nome do pacote" --save-prod  instala o pacote como dependencia do projeto  
+
+npm update   atualiza o pacote 
+
+npm i  "nome do pacote"@versao do pacote instala a versão especifica 
+
+npm uninstall "nome dos pacotes 
+
+
+****detalhamento de versão *******
+ 2.17.1
+
+ 2 major -> quebra de compatibilidade com as demais versões
+ 17 minor -> adição de novas funcionalidades
+ 1 patch -> correção de  bugs 

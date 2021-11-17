@@ -1,0 +1,5 @@
+<% controle de fluxo (if, for ...)%>
+<%= Imprime  tudo o que for escrito %>
+<% - executar caso tenha alguma tag html no meio do testo %>
+<%# comentario%>
+<% include 'caminho do arquivo %>

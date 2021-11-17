@@ -1,0 +1,11 @@
+<%- include('./includes/header') %>
+
+<h1>
+    <% if(typeof ap === 'undefined'){ %>
+        <%= nenhum apartamento cadastrado%>
+    <% for(let a of ap){ %>
+        <%= a %>
+      <% }%>
+
+</h1>
+<%- include('./includes/footer') %>

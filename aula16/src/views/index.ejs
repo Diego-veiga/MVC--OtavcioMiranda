@@ -1,0 +1,16 @@
+ <%- include('./includes/head'); %>
+  <section class="container">
+    <h1>
+      <% for(let i of numeros){ %>
+        <%= i %>
+      <% }%>
+    </h1>
+    <form action="/"  method="POST">
+      <label>Cliente</label>
+      <input placeholder="cliente" name="cliente"/>
+      <Button type="submit"> Enviar</Button>
+    </form>
+
+  </section>
+
+  <%- include('./includes/footer') %>

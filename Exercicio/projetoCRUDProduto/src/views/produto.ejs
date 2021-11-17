@@ -1,0 +1,46 @@
+<%- include('includes/head')%>
+<%- include('includes/nav')%>
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-2"></div>
+
+       <div class="col-lg-8 my-5">
+         <h1 class=" text-center"> Produtos</h1>
+         <p class="text-center lead"> Seus produtos estão abaixo</p>
+         <%- include('includes/messages')%> 
+         <div class="row">
+         
+         </div>
+         <div class="col-lg">
+          <h4> Faça o cadastro do seu produto</h4>
+          <%if(produto.id){%>
+          <form action="/produto/edit/<%= produto.id %>" method="POST">
+            <%}else{%>
+              <form action="/produto/register" method="POST">
+            <%}%>
+           <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+           <div class="form-group">
+             <label >Nome do Produto:</label>
+             <input value="<%= produto.nome %>" type="text" class="form-control" name="nome">
+           </div>
+           <div class="form-group">
+             <label >Preço</label>
+             <input value="<%= produto.preco %>" type="number" class="form-control" name="preco">
+           </div>
+           <div class="form-group">
+             <label >Quantidade Estoque</label>
+             <input value="<%= produto.quantidadeEstoque %>" type="number" class="form-control" name="quantidadeEstoque">
+           </div>
+
+           <button type="submit" class="btn btn-primary">Cadastrar</button>
+         </form>
+        </div>
+
+         
+           
+       </div>
+
+       <div class="col-lg-2"></div>
+     </div>
+   </div>
+   <%- include('includes/footer')%>
